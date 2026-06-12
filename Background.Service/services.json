@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "TC Kimlik No Doğrulama",
+    "ServiceType": "SOAP",
+    "Endpoint": "https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx"
+  },
+  {
+    "Name": "Hava Durumu Servisi",
+    "ServiceType": "REST",
+    "Endpoint": "https://api.openweathermap.org/data/2.5/weather"
+  }
+]
