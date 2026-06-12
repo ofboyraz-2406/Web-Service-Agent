@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2051"/><column_width id="4" width="0"/></tab_structure><tab_browse><table title="." custom_title="0" dock_id="2" table="0,0:"/><dock_state state="000000ff00000000fd00000001000000020000043b000002b6fc0100000002fb000000160064006f0063006b00420072006f007700730065003101000000000000043b0000000000000000fb000000160064006f0063006b00420072006f007700730065003201000000000000043b0000011800ffffff000002580000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">INSERT INTO DEFINITIONS
+(Id, Name, ServiceType, Endpoint, MethodName, IsActive, TableName, MainDefinitionId, ResponseArea, PassTo, PassKey, RequestBody)
+VALUES
+(
+    1,
+    'Main Token Login',
+    'REST',
+    'https://dummyjson.com/auth/login',
+    'POST',
+    1,
+    'TokenData',
+    NULL,
+    'accessToken',
+    NULL,
+    NULL,
+    '{&quot;username&quot;:&quot;emilys&quot;,&quot;password&quot;:&quot;emilyspass&quot;,&quot;expiresInMins&quot;:30}'
+),
+
+(
+    2,
+    'Child Auth Me Level 1',
+    'REST',
+    'https://dummyjson.com/auth/me',
+    'GET',
+    1,
+    'AuthMeData',
+    1,
+    NULL,
+    'Header',
+    'Authorization',
+    NULL
+),
+
+(
+    3,
+    'Child Auth Me Level 2',
+    'REST',
+    'https://dummyjson.com/auth/me',
+    'GET',
+    1,
+    'AuthMeData',
+    2,
+    NULL,
+    'Header',
+    'Authorization',
+    NULL
+),
+
+(
+    4,
+    'Child Auth Me Level 3',
+    'REST',
+    'https://dummyjson.com/auth/me',
+    'GET',
+    1,
+    'AuthMeData',
+    3,
+    NULL,
+    'Header',
+    'Authorization',
+    NULL
+),
+
+(
+    5,
+    'Child Auth Me Level 4',
+    'REST',
+    'https://dummyjson.com/auth/me',
+    'GET',
+    1,
+    'AuthMeData',
+    4,
+    NULL,
+    'Header',
+    'Authorization',
+    NULL
+);</sql><current_tab id="0"/></tab_sql></sqlb_project>
